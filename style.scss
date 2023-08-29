@@ -1,0 +1,689 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: grid;
+    background: white;
+
+
+    div.container
+    {
+        display: grid;
+        grid-template-rows: 44vh 56vh 5vh;
+        grid-template-columns: 7.5vw 85vw 7.5vw;
+
+        result
+        {
+            grid-row: 1;
+
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            width: 100vw;
+
+            background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+            border-radius: 0 0 30px 30px;
+
+            text-align: center;
+            color: white;
+
+            p
+            {
+                color: rgb(170, 170, 170);
+                padding: 3vh;
+                font-size: 2.69vh;
+            }
+
+            div.score
+            {
+                grid-row: 2/3;
+
+                ball
+                {
+                    border-radius: 100%;
+                    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+                    width: 33.3vw;
+                    height: 33.3vw;
+                }
+
+
+
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+
+
+
+
+
+                h1
+                {
+                    font-weight: 800;
+                    font-size: 16vw;
+                    padding-top: 2.69vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                p
+                {
+                    padding: 0;
+                    height: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 2.24vh;
+                    color: rgb(192, 192, 192);
+
+                }
+
+
+            }
+
+            div.result-text
+            {
+                grid-row: 3/7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                h2
+                {
+                    font-size: 8vw;
+
+                }
+
+                p
+                {
+                    padding: 0 13.33vw;
+                    font-size: 2.25vh;
+                }
+            }
+
+        }
+
+        summary
+        {
+            grid-row: 2;
+            grid-column: 2;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            flex-direction: column;
+
+
+            h3
+            {
+                text-align: initial;
+                font-size: 4vw;
+                padding: 2.5vh;
+                padding-left: 0;
+
+            }
+
+            div,h3, a.button{
+                font-size: 2.69vh;
+            }
+
+            div
+            {
+                display: flex;
+                justify-content: space-between;
+                border-radius: 10px;
+                padding: 2.34vh;
+                margin-bottom: 0.75vh;
+                font-weight: 700;
+                
+
+                text
+                {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    p
+                    {
+                        margin-left: 3.75vw;
+                    }
+                }
+
+                score
+                {
+                    color: rgb(140, 140, 140);
+
+                    span
+                    {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            div#reaction
+            {
+                background: hsl(0, 100%, 92%);
+
+                p
+                {
+
+                    color: hsl(0, 100%, 67%);
+                }
+            }
+
+            div#memory
+            {
+                background-color: hsl(39, 100%, 90%);
+
+                p
+                {
+                    color: hsl(39, 100%, 56%);
+                }
+            }
+
+            div#verbal
+            {
+                background: hsl(166, 100%, 90%);
+
+                p
+                {
+                    color: hsl(166, 100%, 37%)
+                }
+            }
+
+            div#visual
+            {
+                background: hsl(221, 100%, 96%);
+
+                p
+                {
+                    color: hsl(234, 85%, 45%);
+                }
+
+
+            }
+
+            a.button
+            {
+                background: hsl(224, 30%, 27%);
+                color: white;
+                font-weight: 800;
+                text-align: center;
+                padding: 2.19vh;
+                margin-bottom: 0.75vh;
+                border-radius: 30px;
+
+            }
+        }
+
+        div.attribution
+        {
+            grid-row: 3;
+            grid-column: 2;
+            padding: 16px;
+            padding-bottom: 50px;
+            height: auto;
+            font-size: 11px;
+            text-align: center;
+
+
+            a
+            {
+                height: auto;
+                color: hsl(228, 45%, 44%);
+            }
+
+
+        }
+    }
+}
+
+@media(min-width: 768px)
+{
+    body
+    {
+        div.container
+        {
+            grid-template-rows: 50vh 50vh 5vh;
+            grid-template-columns: 15vw 70vw 15vw;
+
+            result
+            {
+                div.score
+                {
+                    h1
+                    {
+                        font-size: 14.63vw;
+                    }
+
+                    p
+                    {
+                        font-size: 3.64vw;
+                    }
+                }
+
+                div.result-text
+                {
+                    align-self: first baseline;
+
+                    h2
+                    {
+                        font-size: 6vw;
+                    }
+                }
+
+
+            }
+
+            summary
+            {
+
+                h3,
+                a.button,
+                div
+                {
+                    padding: 2.19vw;
+                }
+
+                h3
+                {
+                    padding-left: 0;
+                }
+
+                div
+                {
+                    svg
+                    {
+                        scale: 1.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 900px)
+{
+    body
+    {
+        background: white;
+        display: grid;
+        grid-template-columns: repeat(4, 25vw);
+        grid-template-rows: 20vh 60vh 20vh;
+
+
+
+        div.container
+        {
+            background: white;
+            grid-column: 2/4;
+            grid-row: 2;
+            grid-template-columns: 1fr;
+            grid-template-rows: 60vh;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.322) 0 8px 24px;
+
+
+
+            result
+            {
+                width: auto;
+                display: grid;
+                grid-template-rows: repeat(6, 1fr);
+
+                border-radius: 30px;
+
+                p
+                {
+                    padding: 3.58vh;
+                    font-size: 1.69vw;
+                }
+
+                div.score
+                {
+                    grid-row: 2/3;
+
+                    ball
+                    {
+                        width: 12.5vw;
+                        height: 12.5vw;
+                    }
+
+                    h1
+                    {
+                        padding: 0;
+                        height: auto;
+                        font-size: 5.5vw;
+                        padding-top: 2.11vw;
+                        padding-bottom: 0;
+                    }
+
+                    p
+                    {
+                        height: 0;
+                        padding: 0;
+                        font-size: 1.52vw;
+                        margin-bottom: 1.69vw;
+                    }
+                }
+
+                div.result-text
+                {
+                    grid-row: 3/7;
+                    display: flex;
+                    align-items: none;
+                    align-content: none;
+
+
+                    h2
+                    {
+                        font-size: 2.54vw;
+                        padding: 3vw;
+                        padding-bottom: 0.84vw;
+
+                    }
+
+                    p
+                    {
+                        font-size: 1.69vw;
+                        padding: 5.06vw;
+                        padding-top: 0;
+                    }
+                }
+
+            }
+
+            summary
+            {
+
+                grid-row: 1;
+
+                background: white;
+                border-radius: 30px;
+
+                display: grid;
+                grid-template-columns: 25vw;
+                grid-template-rows: repeat(6, 1fr);
+
+
+
+                h3
+                {
+                    grid-row: 1;
+                    align-self: flex-start;
+                    font-size: 1.69vw;
+                    padding: 3.58vh 2.76vw;
+                }
+
+                div
+                {
+                    margin: 1.68vw 2.52vw;
+                    margin-top: 0;
+                    padding: 0.84vw;
+                    align-items: center;
+                    font-size: 1.69vw;
+                    transition: 0.3s;
+
+                    text
+                    {
+
+                        svg
+                        {
+                            height: 1.1vw;
+                            margin-left: 0.46vw;
+                        }
+
+                        p{
+                            margin-left: 0.84vw;
+                        }
+                    }
+                    score{
+                        font-size: 1.69vw;
+                    }
+
+                }
+
+                div:hover
+                {
+
+                    scale: 1.05;
+                }
+
+                div#reaction
+                {
+                    grid-row: 2;
+                }
+
+                div#memory
+                {
+                    grid-row: 3;
+                }
+
+                div#verbal
+                {
+                    grid-row: 4;
+                }
+
+                div#visual
+                {
+                    grid-row: 5;
+                }
+
+                a.button
+                {
+                    display: grid;
+                    grid-row: 6;
+                    margin: 1.68vw 2.52vw;
+                    padding: 0.84vw;
+                    margin-bottom: 3.68vw;
+                    align-items: center;
+                    font-size: 1.69vw;
+                    transition: 0.3s;
+
+
+                }
+
+                a.button:hover
+                {
+
+                    background: hsl(225, 30%, 18%);
+                    scale: 1.02;
+                }
+
+            }
+
+            div.attribution
+            {
+                grid-column: 1/3;
+                padding: 10px;
+                margin: 0;
+                font-size: 0.73vw;
+            }
+        }
+
+    }
+}
+
+@media(min-width: 1200px)
+{
+    body
+    {
+        grid-template-rows: 15vh 70vh 15vh;
+
+
+
+        div.container
+        {
+
+            grid-template-rows: 70vh;
+
+            result
+            {
+
+                p
+                {
+                    padding: 3.58vh;
+                    font-size: 1.6vw;
+                }
+
+                div.score
+                {
+
+                    h1
+                    {
+                        padding: 0;
+                        height: auto;
+                        font-size: 4.86vw;
+                        padding-top: 2.93vw;
+                        padding-bottom: 0;
+                    }
+
+                    p
+                    {
+                        height: 0;
+                        padding: 0;
+                        font-size: 1.21vw;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                div.result-text
+                {
+                    grid-row: 3/7;
+                    display: flex;
+                    align-items: none;
+                    align-content: none;
+
+
+                    h2
+                    {
+                        font-size: 2.3vw;
+                        padding: 3vw;
+                        padding-bottom: 10px;
+
+                    }
+
+                    p
+                    {
+                        font-size: 1.2vw;
+                        padding: 5.06vw;
+                        padding-top: 0;
+                    }
+                }
+
+            }
+
+            summary
+            {
+
+                grid-row: 1;
+
+                background: white;
+                border-radius: 30px;
+
+                display: grid;
+                grid-template-columns: 25vw;
+                grid-template-rows: repeat(6, 1fr);
+
+
+
+                h3
+                {
+                    grid-row: 1;
+                    align-self: flex-start;
+                    font-size: 1.6vw;
+                    padding: 3.58vh 2.76vw;
+                }
+
+                div
+                {
+                    margin: 0.92vw 2.76vw;
+                    margin-top: 0;
+                    padding: 0.92vw;
+                    align-items: center;
+                    font-size: 1.2vw;
+                    transition: 0.3s;
+
+                    text{
+                    svg
+                    {
+                        height: 1.1vw;
+                        margin-left: 0.46vw;
+                    }
+                }
+                score{
+                    font-size: 1.2vw
+                }
+
+                }
+
+                div:hover
+                {
+
+                    scale: 1.05;
+                }
+
+                div#reaction
+                {
+                    grid-row: 2;
+                }
+
+                div#memory
+                {
+                    grid-row: 3;
+                }
+
+                div#verbal
+                {
+                    grid-row: 4;
+                }
+
+                div#visual
+                {
+                    grid-row: 5;
+                }
+
+                a.button
+                {
+                    display: grid;
+                    grid-row: 6;
+                    margin: 1.38vw 2.76vw;
+                    padding: 0.92vw;
+                    margin-bottom: 3.68vw;
+                    align-items: center;
+                    font-size: 1.2vw;
+                    transition: 0.3s;
+
+
+                }
+
+                a.button:hover
+                {
+
+                    background: hsl(225, 30%, 18%);
+                    scale: 1.02;
+                }
+
+            }
+
+            div.attribution
+            {
+                grid-column: 1/3;
+                padding: 10px;
+                margin: 0;
+                font-size: 0.73vw;
+            }
+        }
+
+    }
+}
