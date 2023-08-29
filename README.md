@@ -6,7 +6,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -24,17 +23,10 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![](/design/ChallengeScreenShot%20HTML.png)
-![](/design/ChallengeScreenShot%20SCSS.png)
-![](/design/ChallengeScreenShot%20CSS.png)
-
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://andyzaum.github.io/results-summary-component-main/]([https://your-live-site-url.com](https://andyzaum.github.io/results-summary-component-main/))
 
 ## My process
   For this project, my biggest challenge was CSS. I had issues with centering <divs> and a proper understanding of how responsiveness works. In this project, I used many units that were changed from 'px' to 'vw' or 'vh', which allowed me greater ease in working with different screen types. Besides, I also created elements like the <ball> and the <div.container>, which exist solely for styling purposes.
