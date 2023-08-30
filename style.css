@@ -321,7 +321,7 @@ body div.container div.attribution a {
     font-size: 0.73vw;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   body {
     grid-template-rows: 15vh 70vh 15vh;
   }
